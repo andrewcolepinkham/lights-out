@@ -183,7 +183,7 @@ export default class Main extends React.Component{
   }
   
   goToGit = () => {
-    window.open("https://github.com/andrewcolepinkham/lights-out")
+    window.open("https://github.com/andrewcolepinkham/lights-out/tree/master")
   }
 
   componentDidMount() {

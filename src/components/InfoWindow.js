@@ -1,5 +1,11 @@
 import React from "react";
 import {Button} from 'react-bootstrap';
+import blockImage from "../images/matrix.png";
+import hintGif from "../images/hint.gif";
+import codeImage from "../images/code.png";
+import gitImage from "../images/githubImage.png";
+
+
 
 export default class InfoWidow extends React.Component {
 
@@ -21,7 +27,7 @@ export default class InfoWidow extends React.Component {
                   <span>The game is based on a interesting linear algebra algorithm I wrote. Click "next" to learn more. </span>
                 </h3>
                 <div className={'image'}>
-                  <img className={'image'} src={"images/matrix.png"} width="350" height="350" ></img>
+                  <img className={'image'} src={blockImage} width="350" height="350" ></img>
                 </div>
                 <div className={'infoBtns'}>
                   <Button className={'infoBtnClose'} variant="warning" onClick={this.props.closeWindow}>Close</Button>{''}
@@ -43,7 +49,7 @@ export default class InfoWidow extends React.Component {
                   <span>If you need help, click the "hint" button to unlock the correct next move. </span>
                 </h3>
                 <div className={'image'}>
-                <img className={'hintgif'} src={"images/hint.gif"} width="350" height="350" ></img>
+                <img className={'hintgif'} src={hintGif} width="350" height="350" ></img>
                   {/* <img className={'howToPlayImages'} src={"grid1.png"} width="200" height="200" ></img>
                   <img className={'howToPlayImages'} src={"hint.png"} width="150" height="100" ></img>
                   <img className={'howToPlayImages'} src={"grid2.png"} width="200" height="200" ></img> */}
@@ -69,7 +75,7 @@ export default class InfoWidow extends React.Component {
                     <span>The algorithm utalizes a complex matrix reduction technique called gaussian row reduction. My binary implementation will always return the correct set of moves. See it in action by clicking on the "hint" button. </span>
                   </h3>
                   <div className={'image'}>
-                    <img className={'image'} src={"images/code.png"} width="350" height="350" ></img>
+                    <img className={'image'} src={codeImage} width="350" height="350" ></img>
                   </div>
                   <div className={'infoBtns'}>
                     <Button className={'infoBtnClose'} variant="warning" onClick={this.props.closeWindow}>Close</Button>{''}
@@ -92,7 +98,7 @@ export default class InfoWidow extends React.Component {
           <span>To find my source code please check out {<a href="#" class="cta" onClick={this.props.goToGit}>my github</a>} page. </span>
                 </h3>
                 <div className={'image'}>
-                  <img className={'image'} src={"images/githubImage.png"} width="350" height="350" ></img>
+                  <img className={'image'} src={gitImage} width="350" height="350" ></img>
                 </div>
                 <div className={'infoBtns'}>
                   <Button className={'infoBtnClose'} variant="warning" onClick={this.props.closeWindow}>Close</Button>{''}

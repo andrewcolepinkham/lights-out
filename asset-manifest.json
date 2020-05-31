@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lights-out/static/css/main.50f60a6e.chunk.css",
+    "main.js": "/lights-out/static/js/main.0b1c3fcb.chunk.js",
+    "main.js.map": "/lights-out/static/js/main.0b1c3fcb.chunk.js.map",
+    "runtime-main.js": "/lights-out/static/js/runtime-main.d73442e8.js",
+    "runtime-main.js.map": "/lights-out/static/js/runtime-main.d73442e8.js.map",
+    "static/js/2.bdc816c3.chunk.js": "/lights-out/static/js/2.bdc816c3.chunk.js",
+    "static/js/2.bdc816c3.chunk.js.map": "/lights-out/static/js/2.bdc816c3.chunk.js.map",
+    "index.html": "/lights-out/index.html",
+    "precache-manifest.806be6a8801a7a772edd42d978502dba.js": "/lights-out/precache-manifest.806be6a8801a7a772edd42d978502dba.js",
+    "service-worker.js": "/lights-out/service-worker.js",
+    "static/css/main.50f60a6e.chunk.css.map": "/lights-out/static/css/main.50f60a6e.chunk.css.map",
+    "static/js/2.bdc816c3.chunk.js.LICENSE.txt": "/lights-out/static/js/2.bdc816c3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/lights-out/static/media/oriental-tiles.7f265ae7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d73442e8.js",
+    "static/js/2.bdc816c3.chunk.js",
+    "static/css/main.50f60a6e.chunk.css",
+    "static/js/main.0b1c3fcb.chunk.js"
+  ]
+}

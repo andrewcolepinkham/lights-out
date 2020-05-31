@@ -1,13 +1,250 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/squares.png)  */
+  background-image: url('oriental-tiles.png');
+
+}
+  
+.box {
+  display: inline-block;       
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  
+  }
+
+.off {
+  background-color: lightgray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.on {
+  background-color: rgb(243, 161, 10);
+}
+  
+.box:hover { 
+  transition: .3s;
+  background: rgb(41, 2, 78);
+  
+}
+
+.hint{
+  animation: blinker 2s linear infinite;
+  transition: width 2s, height 4ss;
+  background: rgb(255, 248, 143);
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 50%;
+  }
+}
+
+/* Button Tool Bar */
+.center {
+  display: table;
+  margin: auto;
+  margin-top: 10px;
+  
+}
+.newSeed{
+  background-color: rgb(41, 2, 78);
+  border-color: white;
+}
+
+.btn{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.newSeed:hover {
+  color:white;
+  background-color: rgb(26, 1, 49);
+  border-color: white;
+
+}
+.newSeed:focus,
+.newSeed.focus {
+  color:white;
+  background-color: rgb(41, 2, 78);
+  border-color: white;
+  box-shadow: none;
+}
+.newSeed:active,
+.newSeed.active,
+.open > .dropdown-toggle.newSeed {
+  color:white;
+  background-color: rgb(41, 2, 78);
+  border-color: white;
+}
+.newSeed:active:hover,
+.newSeed.active:hover,
+.open > .dropdown-toggle.newSeed:hover,
+.newSeed:active:focus,
+.newSeed.active:focus,
+.open > .dropdown-toggle.newSeed:focus,
+.newSeed:active.focus,
+.newSeed.active.focus,
+.open > .dropdown-toggle.newSeed.focus {
+  color:white;
+  background-color: rgb(41, 2, 78);
+  border-color: white;
+}
+.newSeed:active,
+.newSeed.active,
+.open > .dropdown-toggle.newSeed {
+  background-image: none;
+}
+.newSeed.disabled:hover,
+.newSeed[disabled]:hover,
+fieldset[disabled] .newSeed:hover,
+.newSeed.disabled:focus,
+.newSeed[disabled]:focus,
+fieldset[disabled] .newSeed:focus,
+.newSeed.disabled.focus,
+.newSeed[disabled].focus,
+fieldset[disabled] .newSeed.focus {
+  background-color: rgb(41, 2, 78);
+  border-color: white;
+}
+.newSeedy .badge {
+  color:white;
+  background-color: rgb(41, 2, 78);
+}
+
+.grid {
+  line-height: 0;
+  margin: auto;
+  box-shadow: 0px 0px 20px white;
+  margin-top: 20px;
+}
+  
+h1, h2, h3, h4 {
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+h1{
+  font-weight: 500;
+  font-size: 100px;
+}
+
+h4 {
+  margin-top: 0px;
+}
+
+.solverOn{
+  color: white;
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  margin-top: 10px; 
+}
+
+.solverOff{
+  color: transparent;
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  margin-top: 10px; 
+}
+
+.winOff{
+  color: transparent;
+}
+
+.winOn{
+  font-size: 50px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 50px; 
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.info-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.info {
+  position: fixed;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 30%;
+  width: 60%;
+  overflow-y: auto;
+  background-color: #ebebeb;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  z-index: 101;
+  padding: 40px;
+}
+
+.image{
+  text-align: center;
+}
+
+.infoTitle{
+  
+  padding-bottom: 10px;
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-top: -15px;
+}
+.infoDesc{
+  width: 100%;
+  font-weight: 500;
+  font-size: large;
+  color: black;
+  text-align: center;
+}
+
+.infoPara{
+  padding-bottom: 15px;
+  width: 100%;
+  font-weight: 300;
+  font-size: medium;
+  color: black;
+  text-align: center;
+}
+.infoPageNumber{
+  width: 100%;
+  font-weight: 300;
+  font-size: medium;
+  color: black;
+  text-align: right;
+}
+
+.infoBtns{
+
+  margin-top: 15px;
+}
+.howToPlayImages{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.infoBtnClose{
+  text-align: left;
 }

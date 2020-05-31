@@ -18,7 +18,7 @@ export default class InfoWidow extends React.Component {
                   <span>This is a fun puzzle game I built using React. </span>
                 </h2>
                 <h3 className={'infoPara'}>
-                  <span>The game is based on a interesting linear algebra algorithm I wrote Click "next" to learn more. </span>
+                  <span>The game is based on a interesting linear algebra algorithm I wrote. Click "next" to learn more. </span>
                 </h3>
                 <div className={'image'}>
                   <img className={'image'} src={"images/matrix.png"} width="350" height="350" ></img>
